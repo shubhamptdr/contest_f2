@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contest F2</title>
+  </head>
+  <body>
+    <section class="container">
+      <section class="filter-container">
+        <h2>Filter ui cards via their profession.</h2>
+
+        <!-- filter select -->
+        <div class="select-group">
+          <button id="button" class="buttonSelect">
+            <span id="select-label">Profession</span>
+            <div id="arrow" class="arrow"></div>
+          </button>
+
+          <div class="dropdown hidden" id="dropdown">
+            <input
+              type="radio"
+              id="developer"
+              name="where"
+              value="developer"
+              class="option"
+            />
+            <label for="developer" id="developer" class="select-item"
+              >Developer</label
+            >
+
+            <input
+              type="radio"
+              id="admin"
+              name="where"
+              value="admin"
+              class="option"
+            />
+            <label for="admin" id="admin" class="select-item">Admin</label>
+          </div>
+        </div>
+        <!-- result div -->
+        <div class="res">
+          <!-- <div class="res-item">
+            <p>1.</p>
+            <p>Name:John</p>
+            <p>Profession: Developer</p>
+            <p>Age:18</p>
+          </div> -->
+          <!-- <div class="res-item">
+            <p>1.</p>
+            <p>Name:Jack</p>
+            <p>Profession: Admin</p>
+            <p>Age:18</p>
+          </div>
+          <div class="res-item">
+            <p>1.</p>
+            <p>Name:John</p>
+            <p>Profession: Developer</p>
+            <p>Age:18</p>
+          </div> -->
+        </div>
+        <div>
+          <button class="filterBtn button">Filter</button>
+          <button class="resetBtn button">Reset</button>
+        </div>
+      </section>
+      <section class="add-container">
+        <h2 class="h2">Add a new user</h2>
+        <div class="input-div">
+          <div>
+            <label for="name">Enter Name</label>
+            <input type="text" name="name" value="" id="name" required />
+          </div>
+          <div>
+            <label for="profession">Profession</label>
+            <input
+              type="text"
+              name="profession"
+              value=""
+              id="profession"
+              required
+            />
+          </div>
+          <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" value="" id="age" required />
+          </div>
+        </div>
+        <button class="addBtn button">Add User</button>
+      </section>
+    </section>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
